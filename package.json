@@ -1,0 +1,25 @@
+{
+  "name": "weathergetter",
+  "version": "1.0.0",
+  "description": "weather advisory app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KyleMondina/WeatherGetter.git"
+  },
+  "author": "Kyle Mondina Pushpal Patil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KyleMondina/WeatherGetter/issues"
+  },
+  "homepage": "https://github.com/KyleMondina/WeatherGetter#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "jquery": "^3.3.1"
+  }
+}
