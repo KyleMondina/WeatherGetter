@@ -1,16 +1,19 @@
 <html>
   <head>
     <link rel = "stylesheet" href = "../Assets/Styles/landingPage.css">
+
   <head>
   <body>
     <div id = "wrapper">
     <h1>Weather Getter</h1>
-    <form>
+    <form id = 'hi'>
       <p>View the Current Weather in Your Area</p>
-      <input type = "text" placeholder = "ZIP CODE" name = "zipcode">
+      <input type = "text" placeholder = "ZIP CODE" id = "zipcode" >
       <br>
-      <button class = "button" type = "submit">Check Weather</button>
+      <button class = "button">Check Weather</button>
     <form>
      </div>
   <body>
+    <script src = "../node_modules/jquery/dist/jquery.js"></script>
+    <script src = "../Scripts/getZIP.js"></script>
 </html>
