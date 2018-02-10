@@ -16,10 +16,22 @@ app.use('/node_modules', express.static('node_modules'));
 app.get('/', function(req,res){
   res.render('landingPage');
 });
-app.post('/', function(req,res)
+app.post('/', urlencodedparser, function(req,res)
 {
-  console.log("gi");
-  res.send();
+  const data = req.body.zipcode;
+  userInfo.userZip = data;
+  res.json(userInfo);
+});
+
+app.get('/WeatherDisplay', function(req,res){
+
+  res.render('weatherDisplay');
+
+});
+app.get('/app.js', function(req,res){
+
+  res.json(userInfo);
+
 });
 
 app.listen(3000);
